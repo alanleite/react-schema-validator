@@ -1,3 +1,5 @@
+import validateEmail from 'validator/lib/isEmail'
+
 const exec = (func) => {
   return (val) => {
     try {
@@ -15,23 +17,23 @@ export default () => {
 
     ctx.required = () => {
       ctx.validators.push({
-        message: 'Este campo não é obrigatório',
+        message: 'Este campo é obrigatório.',
         action: (val) => !!val
       })
       return ctx
     }
 
-    // ctx.email = () => {
-    //   ctx.validators.push({
-    //     message: 'Este campo não é um e-mail válido',
-    //     action: exec(validateEmail)
-    //   })
-    //   return ctx
-    // }
+    ctx.email = () => {
+      ctx.validators.push({
+        message: 'Este campo não é um e-mail válido',
+        action: exec(validateEmail)
+      })
+      return ctx
+    }
 
     ctx.min = (min) => {
       ctx.validators.push({
-        message: `Quantidade mínima de caracteres é ${min}`,
+        message: `Quantidade mínima de caracteres é de ${min}.`,
         action: exec(value => (value.length >= min))
       })
       return ctx
@@ -39,7 +41,7 @@ export default () => {
 
     ctx.max = (max) => {
       ctx.validators.push({
-        message: `Quantidade máxima de caracteres é ${max}`,
+        message: `Quantidade máxima de caracteres é de ${max}.`,
         action: exec(value => (value.length <= max))
       })
       return ctx

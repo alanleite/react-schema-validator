@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component deve conseguir renderizar [snapshot] 1`] = `
+<div>
+  Jonhy
+  <button>
+    Change
+  </button>
+</div>
+`;
+
+exports[`Button component deve conseguir renderizar [snapshot] 2`] = `
+<div>
+  Teste
+  {"name":["Este campo não é do tipo texto","Quantidade máxima de caracteres é de 2."]}
+  <button>
+    Change
+  </button>
+</div>
+`;

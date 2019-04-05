@@ -1,7 +1,9 @@
 import text from './text'
+import number from './number'
 
 const builder = {
-  text 
+  text,
+  number
 }
 
 export default builder

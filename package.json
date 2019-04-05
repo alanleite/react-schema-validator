@@ -1,0 +1,25 @@
+{
+  "name": "react-schema-validator",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "repository": "git@github.com:alanleite/react-schema-validator.git",
+  "author": "Alan Leite <alnleite@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "jest": "^24.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-testing-library": "^6.0.4"
+  }
+}

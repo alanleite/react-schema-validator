@@ -1,6 +1,6 @@
 {
   "name": "react-schema-validator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "repository": "git@github.com:alanleite/react-schema-validator.git",
   "author": "Alan Leite <alnleite@gmail.com>",

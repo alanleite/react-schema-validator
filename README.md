@@ -49,10 +49,10 @@ const MyForm = () => {
 
 ## Roadmap
 
-[ ] Add more validation models
-[ ] Tree shaking compatibilities
-[ ] List of supported browsers
-[ ] Create tests and coverage
+- [ ] Add more validation models
+- [ ] Tree shaking compatibilities
+- [ ] List of supported browsers
+- [ ] Create tests and coverage
 
 ### Contributing
 

@@ -11,6 +11,15 @@ test('text: required', () => {
     expect(result.name.length).toBe(2)
 })
 
+test('text: simple single', () => {
+    const result = validate(
+        schema.text().required(),
+        null
+    )
+    expect(result.length).toBe(2)
+    expect(result[0]).toBe('Este campo não é do tipo texto')
+})
+
 test('text: required false', () => {
     const defs = {
         name: schema.text().required()

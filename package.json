@@ -24,6 +24,6 @@
     "react-testing-library": "^6.0.4"
   },
   "dependencies": {
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
